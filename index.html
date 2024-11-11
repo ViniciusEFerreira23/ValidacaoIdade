@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Idade</title>
+</head>
+
+<body>
+    <header>
+        <h1>ConectAmor</h1>
+    </header>
+    <main>
+        <section id="inicio">
+            <h2>Bem-vindo ao ConectAmor - Onde o Amor Encontra Seu Caminho!</h2>
+
+            <p>
+                No ConectAmor, acreditamos que o amor está por toda parte, só precisamos de uma conexão certa para
+                encontrá-lo. Criamos um espaço onde corações solitários podem se encontrar de forma divertida, segura e
+                verdadeira. Aqui, você não só encontra pessoas interessantes, mas também tem a chance de viver
+                experiências que podem transformar sua vida amorosa.
+            </p>
+        </section>
+        <div class="sections">
+            <section id="apresentacao">
+                <h2>
+                    Por que Escolher o ConectAmor?
+                </h2>
+
+                <ol type="1">
+                    <li>
+                        Encontros Verdadeiros
+                        <p>
+                            Nosso principal objetivo é ajudar você a encontrar uma conexão genuína. Seja para um
+                            relacionamento sério ou para algo mais casual, você pode se sentir à vontade para ser quem
+                            é,
+                            sem pressões.
+                        </p>
+                    </li>
+                    <li>
+                        Design Moderno e Intuitivo
+                        <p>
+                            Com um layout clean e fácil de navegar, o ConectAmor foi pensado para proporcionar a melhor
+                            experiência de uso. Encontrar pessoas que compartilham os mesmos interesses nunca foi tão
+                            simples!
+                        </p>
+                    </li>
+                    <li>
+                        Filtros Avançados
+                        <p>
+                            Quer encontrar alguém que adora filmes de comédia romântica ou uma pessoa que tenha o mesmo
+                            gosto musical que você? Com nossos filtros avançados, você pode procurar pessoas que
+                            compartilham seus valores, paixões e interesses.
+                        </p>
+                    </li>
+                    <li>
+                        Privacidade e Segurança
+                        <p>
+                            Acreditamos que uma boa conexão começa com confiança. Nossa plataforma é segura, com
+                            recursos de
+                            privacidade que garantem que você tenha controle total sobre quem pode ver seu perfil e suas
+                            interações.
+                        </p>
+                    </li>
+                    <li>
+                        Conexões Reais, Sem Pressão
+                        <p>
+                            Não se trata de encontrar alguém rapidamente, mas de criar uma conexão verdadeira. Com nosso
+                            sistema de mensagens, você pode conversar de forma leve e sem pressa, conhecendo o outro no
+                            seu
+                            tempo.
+                        </p>
+                    </li>
+                    <li>
+                        Diversão e Flerte
+                        <p>
+                            Além de facilitar encontros românticos, o ConectAmor é um lugar onde o flerte também faz
+                            parte!
+                            Interaja de forma divertida com outras pessoas, compartilhe seu humor, interesses e, quem
+                            sabe,
+                            um pouco de encanto.
+                        </p>
+                    </li>
+                </ol>
+            </section>
+
+            <section id="funcionamento">
+                <h2>Funções:</h2>
+                <ol type="1">
+                    <li>
+                        Crie seu Perfil
+                        <p>
+                            Comece criando um perfil completo com informações sobre você, seus hobbies, paixões e o que
+                            procura em um parceiro. Não tenha pressa – quanto mais você compartilha, mais fácil será
+                            encontrar alguém com interesses semelhantes.
+                        </p>
+                    </li>
+                    <li>
+                        Explore Perfis
+                        <p>
+                            Navegue pelos perfis e comece a se conectar com pessoas que chamaram sua atenção. Você pode
+                            curtir fotos, enviar mensagens e, com isso, iniciar conversas interessantes.
+                        </p>
+                    </li>
+                    <li>
+                        Encontre o Match Perfeito
+                        <p>
+                            Quando duas pessoas se curtem, é hora de iniciar uma conversa! Se o papo fluir, quem sabe o
+                            futuro traga algo mais sério.
+                        </p>
+                    </li>
+                </ol>
+            </section>
+
+            <section id="Recursos">
+                <h2>Recursos:</h2>
+                <ol type="1">
+                    <li>
+                        Modo "Encontro à Vista"
+                        <p>
+                            Caso esteja buscando algo mais romântico, temos o "Encontro à Vista", onde você pode indicar
+                            o
+                            tipo de encontro ideal, como jantar, passeio no parque ou até mesmo uma conversa virtual
+                            antes
+                            de um encontro ao vivo.
+                        </p>
+                    </li>
+                    <li>
+                        Conversa Anônima
+                        <p>
+                            Tem vergonha de dar o primeiro passo? Experimente nossa função de "Conversa Anônima", onde
+                            você
+                            pode conversar com alguém sem revelar imediatamente seu nome ou detalhes pessoais.
+                        </p>
+                    </li>
+                    <li>
+                        Eventos e Encontros Temáticos
+                        <p>
+                            Participe de eventos online e encontros temáticos organizados por nossa comunidade. De
+                            noites de
+                            quiz a encontros com interesse comum, há sempre algo novo acontecendo.
+                        </p>
+                    </li>
+                </ol>
+            </section>
+        </div>
+
+        <section id="validacaoIdade">
+            <div class="container">
+                <h2>
+                    Conecte-se Agora!
+                </h2>
+                <p>
+                    Insira a sua idade:
+                </p>
+
+                <input type="number" id="idadeInput">
+                <button onclick="verificarIdade()">Verificar</button>
+            </div>
+
+            <script>
+                function verificarIdade() {
+                    const idade = parseInt(document.getElementById("idadeInput").value);
+
+                    if (idade >= 18) { // Se a idade for maior ou igual a dezoito
+                        window.location.href = "permitido.html"
+                        // window pq sim, location pra indicar que é uma location. href pra dizer que é um link e = "local de destino".
+                    }
+
+                    // IF (idade >= 18) : IF: SE , (idade >= 18): condição  
+
+                    else { // se não
+                        window.location.href = "npermitido.html"
+                        // window pq sim, location pra indicar que é uma location. href pra dizer que é um link e = "local de destino".
+                    }
+
+                    // Else : Se não
+
+                }
+            </script>
+        </section>
+    </main>
+</body>
+
+<footer>
+    &copy; | Todos os direitos reservados.
+</footer>
+
+</html>

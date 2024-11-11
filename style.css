@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+    font-size: 3em;
+    color: rgb(153, 70, 70);
+    background-color: rgb(114, 39, 39);
+    padding: 5px;
+}
+
+body{
+    background-color: brown;
+}
+
+h2{
+    font-size: 2.5em;
+    padding: 30px;
+    color: rgb(226, 79, 79);
+}
+
+p{
+    font-size: 0.95em;
+    padding: 15px;
+}
+
+#inicio,#apresentacao, #funcionamento, #Recursos, #validacaoIdade {
+    text-align: center; 
+    padding: 30px;
+}
+
+ol {
+    width: 30%;
+    margin: 0 auto; 
+    list-style-position: inside; 
+}
+
+footer{
+    background-color: rgb(114, 39, 39);
+    font-size: 1.5em;
+    padding: 10px;
+    text-align: center;
+}

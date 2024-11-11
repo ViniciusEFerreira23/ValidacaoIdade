@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: brown;
+}
+
+header{
+    text-align: center;
+    font-size: 3em;
+    background-color: rgb(114, 39, 39) ;
+    color: rgb(153, 70, 70);
+}
+
+.container{
+    background-image: url(./imagem/456.jpg);
+    background-size: 100% 99vh;
+    width: 100vw;
+    height: 88.5vh;
+}
